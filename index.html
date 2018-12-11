@@ -30,10 +30,11 @@
   <div id='map'></div>
   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
   <script src="data/bannerLocations.js"></script>
+  <script src="data/billboardLocations.js"></script>
   <script>
     // map options
     var options = {
-      center: [33.83333333,-80.86666667],
+      center: [33.83333333, -80.86666667],
       zoom: 7.5
     }
 
@@ -54,8 +55,42 @@
     };
     // request some basemap tiles and add to the map
     var tiles = L.tileLayer(basemap_source, basemap_options).addTo(map);
-    var placesLeaflet = L.geoJson(locations).addTo(map);
-    console.log(locations);
+    var js_files = {
+      billboardLayer: {
+        source: billboardLocations,
+        color: '#1f78b4'
+      },
+      bannerLayer: {
+        source: bannerLocations,
+        color: '#ff2700'
+      }
+    };
+    var geojsonLayers = {};
+    for (file in js_files) {
+      console.log(js_files[file].source)
+      //console.log(js_files[file].color)
+      geojsonLayers[file] = L.geoJson(js_files[file].source, {
+        pointToLayer: function(feature, latlng) {
+          return L.circleMarker(latlng)
+        },
+        style: function (feature) {
+          return {
+            fillColor: js_files[file].color,
+            weight: 0,
+            fillOpacity: 0.75,
+            radius: 10
+          }
+        }
+      }).addTo(map);
+    }
+
+    var sourcesLayers = {
+      "<b style='color:#1f78b4; text-shadow: 0px 0px 1px #333; font-size: 20px'>Billboards</b>": geojsonLayers.billboardLayer,
+      "<b style='color:#ffffff; text-shadow: 0px 0px 1px #333; font-size: 20px'>Banners</b>": geojsonLayers.bannerLayer
+    };
+    L.control.layers(null, sourcesLayers, {
+      collapsed: false
+    }).addTo(map);
   </script>
 
 </body>

@@ -1,4 +1,4 @@
-{
+var billboardLocations = {
   "type": "FeatureCollection",
   "name": "billboardLocations",
   "crs": {

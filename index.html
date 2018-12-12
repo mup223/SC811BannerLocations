@@ -68,11 +68,11 @@
     };
     var geojsonLayers = {};
     for (file in js_files) {
-      console.log(js_files[file].source)
+      //console.log(js_files[file].source)
       //console.log(js_files[file].color)
       geojsonLayers[file] = L.geoJson(js_files[file].source, {
         pointToLayer: function(feature, latlng) {
-          return L.circleMarker(latlng)
+          return L.circleMarker(latlng).on('click', onClick);
         },
         style: function (feature) {
           return {
@@ -84,6 +84,7 @@
         }
       }).addTo(map);
     }
+    console.log(geojsonLayers.bannerLayer);
 
     var sourcesLayers = {
       "<b style='color:#1f78b4; text-shadow: 0px 0px 1px #333; font-size: 20px'>Billboards</b>": geojsonLayers.billboardLayer,
@@ -113,6 +114,11 @@
 
       // Add layer to map!
       stateLayer.addTo(map)
+
+      var clicked = false;
+      function onClick(e) {
+        alert(e.latlng);
+      };
   </script>
 
 </body>

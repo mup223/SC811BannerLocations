@@ -13,7 +13,8 @@ var bannerLocations = {
         "address": "P.O. Box 1009, Lancaster, SC",
         "name": "Lancaster County Water and Sewer",
         "lat": 34.72557,
-        "long": -80.7749565
+        "long": -80.7749565,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -26,7 +27,8 @@ var bannerLocations = {
         "address": "4150 Pebble St, Charlotte, NC",
         "name": "Pike Electric",
         "lat": 35.2711602,
-        "long": -80.8132785
+        "long": -80.8132785,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -39,7 +41,8 @@ var bannerLocations = {
         "address": "1413 Prince St, Beaufort, SC",
         "name": "CenturyLink",
         "lat": 32.4355796,
-        "long": -80.6804375
+        "long": -80.6804375,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -52,7 +55,8 @@ var bannerLocations = {
         "address": "1440 McCurdy Road, Florence, SC",
         "name": "City of Florence",
         "lat": 34.1735725,
-        "long": -79.7252211
+        "long": -79.7252211,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -65,7 +69,8 @@ var bannerLocations = {
         "address": "301 South Avenue, Spartanburg, SC",
         "name": "Spartanburg Water",
         "lat": 34.9111954,
-        "long": -81.9369988
+        "long": -81.9369988,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -78,7 +83,8 @@ var bannerLocations = {
         "address": "3335 Wade Hampton Blvd, Taylors, SC",
         "name": "Taylors Fire and Sewer District",
         "lat": 34.9188765,
-        "long": -82.3169807
+        "long": -82.3169807,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -91,7 +97,8 @@ var bannerLocations = {
         "address": "235 Deming Way, Summerville, SC",
         "name": "Dorchester County Water and Sewer",
         "lat": 33.0468803,
-        "long": -80.2131436
+        "long": -80.2131436,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -104,7 +111,8 @@ var bannerLocations = {
         "address": "386 Frontage Rd, Gaston, SC",
         "name": "Foremost Pipeline Construction Co Inc.",
         "lat": 33.8341253,
-        "long": -81.0260433
+        "long": -81.0260433,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -117,7 +125,8 @@ var bannerLocations = {
         "address": "965 West Main Street, Rock Hill, SC",
         "name": "York County Natural Gas Authority",
         "lat": 34.9351487,
-        "long": -81.0444453
+        "long": -81.0444453,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -130,7 +139,8 @@ var bannerLocations = {
         "address": "810 Dutch Square Blvd, Suite 320, Columbia, SC",
         "name": "SC811",
         "lat": 34.0341183,
-        "long": -81.0967108
+        "long": -81.0967108,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",

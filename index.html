@@ -47,8 +47,9 @@
     }
     .footer-img {
       float: right;
-      height: 10vh;
+      height: 7vh;
       margin: 10px;
+      vertical-align: middle;
     }
   </style>
 </head>
@@ -57,7 +58,7 @@
 
   <div id='map'></div>
   <div id='footer'>
-    <div><img src="https://uky-gis.github.io/graphics/logo-color-400px.png" class="footer-img">
+    <div><img src="\data\images\SC811new2.png" class="footer-img">
         <h1>Average Rent in Every US County</h1>
         Data obtained through the American Fact Finder (<a href="http://factfinder.census.gov/" rel="noopener noreferrer" target="_blank">factfinder.census.gov</a>);
         2010 Census, SF1 joined to Census Cartographic Boundary Shapefiles (<a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" rel="noopener noreferrer" target="_blank">www.census.gov/geography</a>) using QGIS.
@@ -104,11 +105,11 @@
     };
     var geojsonLayers = {};
     for (file in js_files) {
-      //console.log(js_files[file].source)
+      console.log(js_files[file].source)
       //console.log(js_files[file].color)
       geojsonLayers[file] = L.geoJson(js_files[file].source, {
         pointToLayer: function(feature, latlng) {
-          return L.circleMarker(latlng).on('click', onClick);
+          return L.circleMarker(latlng) //.on('click', onClick);
         },
         style: function (feature) {
           return {
@@ -117,10 +118,15 @@
             fillOpacity: 0.75,
             radius: 10
           }
-        }
+        }//,
+        // onEachFeature: function(feature, layer) {
+        //   layer.on('mouseover', function() {
+        //     layer.bindPopup
+        //   })
+        // }
       }).addTo(map);
     }
-    console.log(geojsonLayers.bannerLayer);
+    //console.log(geojsonLayers.bannerLayer);
 
     var sourcesLayers = {
       "<b style='color:#1f78b4; text-shadow: 0px 0px 1px #333; font-size: 20px'>Billboards</b>": geojsonLayers.billboardLayer,
@@ -153,11 +159,11 @@
 
       function onClick() {
         var x = document.getElementById('footer');
-        if (x.style.height === '20vh') {
-          x.style.height = '0px';
-        } else {
-          x.style.height = '20vh'
-        }
+        // if (x.style.height === '20vh') {
+        //   x.style.height = '0px';
+        // } else {
+        //   x.style.height = '20vh'
+        // }
       };
   </script>
 

@@ -141,7 +141,7 @@
          onEachFeature: function(feature, layer) {
            var images = layer.feature.properties.imageFile;
            //console.log(images);
-           layer.on('click', onClick(images));
+           layer.on('click', onClick.bind(this,images));
          }
       }).addTo(map);
     }
@@ -174,10 +174,10 @@
       });
       // Add layer to map!
       stateLayer.addTo(map)
-      function onClick.bind(this, images) {
-        console.log(images);
-        // var x = document.getElementById('imageTest');
-        // x.innerHTML = '<img src="data/images/LCWASD -Lancaster 2.jpg"/>';
+      function onClick(images) {
+        //console.log(images);
+        var x = document.getElementById('imageTest');
+        x.innerHTML = '<img src="data/images/' + images + '"/>';
         //console.log(x)
         //<img src="\data\images\LCWASD -Lancaster.jpg" id="imageTest">
         //"<img src='something' onmouseover='change(\"ex1\")' />"

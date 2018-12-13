@@ -25,7 +25,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": null,
         "LAT": 33.990684,
-        "Long": -81.185208
+        "Long": -81.185208,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -50,7 +51,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": null,
         "LAT": 33.938461,
-        "Long": -81.270229
+        "Long": -81.270229,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -75,7 +77,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": null,
         "LAT": 33.884693,
-        "Long": -81.37166
+        "Long": -81.37166,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -100,7 +103,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": null,
         "LAT": 33.950897,
-        "Long": -81.246937
+        "Long": -81.246937,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -125,7 +129,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": null,
         "LAT": 34.814258,
-        "Long": -81.962867
+        "Long": -81.962867,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -150,7 +155,8 @@ var billboardLocations = {
         "FHNG": 1,
         "BEC": null,
         "LAT": 34.441827,
-        "Long": -81.764147
+        "Long": -81.764147,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -175,7 +181,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": null,
         "LAT": 33.36472,
-        "Long": -80.597755
+        "Long": -80.597755,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -200,7 +207,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": null,
         "LAT": 35.079642,
-        "Long": -82.059899
+        "Long": -82.059899,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -225,7 +233,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": null,
         "LAT": 33.940063,
-        "Long": -79.167828
+        "Long": -79.167828,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -250,7 +259,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": 1,
         "LAT": 33.818738,
-        "Long": -80.144213
+        "Long": -80.144213,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -275,7 +285,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": 3,
         "LAT": 33.598728,
-        "Long": -80.329306
+        "Long": -80.329306,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -300,7 +311,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": null,
         "LAT": 35.100864,
-        "Long": -81.644478
+        "Long": -81.644478,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -325,7 +337,8 @@ var billboardLocations = {
         "FHNG": 1,
         "BEC": null,
         "LAT": 34.516939,
-        "Long": -82.871912
+        "Long": -82.871912,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -350,7 +363,8 @@ var billboardLocations = {
         "FHNG": null,
         "BEC": null,
         "LAT": 34.999906,
-        "Long": -81.930417
+        "Long": -81.930417,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -375,7 +389,8 @@ var billboardLocations = {
         "FHNG": 3,
         "BEC": null,
         "LAT": 34.655559,
-        "Long": -82.163224
+        "Long": -82.163224,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -400,7 +415,8 @@ var billboardLocations = {
         "FHNG": 2,
         "BEC": null,
         "LAT": 35.020693,
-        "Long": -82.412883
+        "Long": -82.412883,
+        "imageFile": "LCWASD -Lancaster2.jpg"
       },
       "geometry": {
         "type": "Point",

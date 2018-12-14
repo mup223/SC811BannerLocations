@@ -26,7 +26,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 33.990684,
         "Long": -81.185208,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "LCWASD -Lancaster2_small.jpg"
       },
       "geometry": {
         "type": "Point",

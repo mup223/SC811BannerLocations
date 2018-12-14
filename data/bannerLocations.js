@@ -14,7 +14,7 @@ var bannerLocations = {
         "name": "Lancaster County Water and Sewer",
         "lat": 34.72557,
         "long": -80.7749565,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "LCWASD -Lancaster2_small.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -28,7 +28,7 @@ var bannerLocations = {
         "name": "Pike Electric",
         "lat": 35.2711602,
         "long": -80.8132785,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "Bigham Cable - Powdersville SC_small.JPG"
       },
       "geometry": {
         "type": "Point",
@@ -42,7 +42,7 @@ var bannerLocations = {
         "name": "CenturyLink",
         "lat": 32.4355796,
         "long": -80.6804375,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "Century Link - Burton SC_small.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -56,7 +56,7 @@ var bannerLocations = {
         "name": "City of Florence",
         "lat": 34.1735725,
         "long": -79.7252211,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "Century Link-Beaufort_small.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -70,7 +70,7 @@ var bannerLocations = {
         "name": "Spartanburg Water",
         "lat": 34.9111954,
         "long": -81.9369988,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "Century Link-St.Helena Island_small.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -84,7 +84,7 @@ var bannerLocations = {
         "name": "Taylors Fire and Sewer District",
         "lat": 34.9188765,
         "long": -82.3169807,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "Foremost Pipeline-Gaston_small.JPG"
       },
       "geometry": {
         "type": "Point",
@@ -98,7 +98,7 @@ var bannerLocations = {
         "name": "Dorchester County Water and Sewer",
         "lat": 33.0468803,
         "long": -80.2131436,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "Foremost Pipeline-Goose Creek_small.JPG"
       },
       "geometry": {
         "type": "Point",
@@ -112,7 +112,7 @@ var bannerLocations = {
         "name": "Foremost Pipeline Construction Co Inc.",
         "lat": 33.8341253,
         "long": -81.0260433,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "Foremost-Aiken_small.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -126,7 +126,7 @@ var bannerLocations = {
         "name": "York County Natural Gas Authority",
         "lat": 34.9351487,
         "long": -81.0444453,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "Foremost-Florence_small.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -140,7 +140,7 @@ var bannerLocations = {
         "name": "SC811",
         "lat": 34.0341183,
         "long": -81.0967108,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "Foremost-Greenville_small.jpg"
       },
       "geometry": {
         "type": "Point",

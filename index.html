@@ -212,7 +212,7 @@
             //console.log(name)
             var loc = layer.feature.properties.approxLocDesc;
             console.log(loc);
-            layer.on('click', onClick.bind(this, images, name));
+            layer.on('click', onClick.bind(this, images, name, loc));
           }
         }).addTo(map);
       }

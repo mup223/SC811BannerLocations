@@ -12,7 +12,7 @@ var billboardLocations = {
       "properties": {
         "Size": "10 x 40",
         "approxLoc": "I-20",
-        "approxLocDesc": " .1 mile west of Mineral Springs Road mm 58.7��������������������� ",
+        "approxLocDesc": " .1 mile west of Mineral Springs Road mm 58.7",
         "SCEG": 1,
         "DOMINION": null,
         "DIXIE": 2,
@@ -26,7 +26,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 33.990684,
         "Long": -81.185208,
-        "imageFile": "LCWASD -Lancaster2_small.jpg"
+        "imageFile": "BB430B US 501 RHR FS_small.JPG"
       },
       "geometry": {
         "type": "Point",
@@ -38,7 +38,7 @@ var billboardLocations = {
       "properties": {
         "Size": "10 x 40",
         "approxLoc": "I-20 ",
-        "approxLocDesc": ".5 miles west of two notch Road���������������������� ��������������������������������",
+        "approxLocDesc": ".5 miles west of two notch Road",
         "SCEG": 2,
         "DOMINION": 1,
         "DIXIE": 3,
@@ -52,7 +52,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 33.938461,
         "Long": -81.270229,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBGA 811 panel  52627_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -78,7 +78,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 33.884693,
         "Long": -81.37166,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBGA 811 panel 8714_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -90,7 +90,7 @@ var billboardLocations = {
       "properties": {
         "Size": "10 x 40",
         "approxLoc": "I-20 ",
-        "approxLocDesc": "1 mile west of Highway 6���mm 56������������������������������������������������������������� ",
+        "approxLocDesc": "1 mile west of Highway 656",
         "SCEG": 3,
         "DOMINION": null,
         "DIXIE": 1,
@@ -104,7 +104,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 33.950897,
         "Long": -81.246937,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 6703_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -116,7 +116,7 @@ var billboardLocations = {
       "properties": {
         "Size": "10.5 x 36",
         "approxLoc": "I-26 ",
-        "approxLocDesc": "1.7 miles east of Highway 221��� ��������������������������������������������������������",
+        "approxLocDesc": "1.7 miles east of Highway 221",
         "SCEG": null,
         "DOMINION": null,
         "DIXIE": null,
@@ -130,7 +130,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 34.814258,
         "Long": -81.962867,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 8023_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -142,7 +142,7 @@ var billboardLocations = {
       "properties": {
         "Size": "10 x 40",
         "approxLoc": "I-26 ",
-        "approxLocDesc": ".2 miles west of South Carolina State Route 66���������������������������� ",
+        "approxLocDesc": ".2 miles west of South Carolina State Route 66",
         "SCEG": null,
         "DOMINION": 2,
         "DIXIE": null,
@@ -156,7 +156,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 34.441827,
         "Long": -81.764147,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 9329_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -168,7 +168,7 @@ var billboardLocations = {
       "properties": {
         "Size": "14 x 48",
         "approxLoc": "I-26 ",
-        "approxLocDesc": ".5 miles east of Exit 165�������������������� �������������������������������������������������",
+        "approxLocDesc": ".5 miles east of Exit 165",
         "SCEG": 3,
         "DOMINION": null,
         "DIXIE": null,
@@ -182,7 +182,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 33.36472,
         "Long": -80.597755,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 50092_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -194,7 +194,7 @@ var billboardLocations = {
       "properties": {
         "Size": "10.5 x 36",
         "approxLoc": "I-26 ",
-        "approxLocDesc": "750 feet east of Highway 292����������������������������������������������������������� ",
+        "approxLocDesc": "750 feet east of Highway 292",
         "SCEG": null,
         "DOMINION": null,
         "DIXIE": null,
@@ -208,7 +208,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 35.079642,
         "Long": -82.059899,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 52119_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -220,7 +220,7 @@ var billboardLocations = {
       "properties": {
         "Size": "10 x 25",
         "approxLoc": "US 501 ",
-        "approxLocDesc": "6.8 miles north of Conway City Limit������������������������������������������ ",
+        "approxLocDesc": "6.8 miles north of Conway City Limit",
         "SCEG": 2,
         "DOMINION": null,
         "DIXIE": null,
@@ -234,7 +234,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 33.940063,
         "Long": -79.167828,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BB430B US 501 N of Conway FS_small.JPG"
       },
       "geometry": {
         "type": "Point",
@@ -246,7 +246,7 @@ var billboardLocations = {
       "properties": {
         "Size": "10 x 40",
         "approxLoc": "I-95 ",
-        "approxLocDesc": ".1 mile north of SR-14-50����������������������������������������������������������������",
+        "approxLocDesc": ".1 mile north of SR-14-50",
         "SCEG": null,
         "DOMINION": 3,
         "DIXIE": null,
@@ -260,7 +260,7 @@ var billboardLocations = {
         "BEC": 1,
         "LAT": 33.818738,
         "Long": -80.144213,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 panel 7555_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -272,7 +272,7 @@ var billboardLocations = {
       "properties": {
         "Size": "10 x 40",
         "approxLoc": "I-95 ",
-        "approxLocDesc": ".2 miles north of SR-14-38������������������������������������������������������������������ ",
+        "approxLocDesc": ".2 miles north of SR-14-38",
         "SCEG": 1,
         "DOMINION": null,
         "DIXIE": null,
@@ -286,7 +286,7 @@ var billboardLocations = {
         "BEC": 3,
         "LAT": 33.598728,
         "Long": -80.329306,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 panel 7622_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -297,8 +297,8 @@ var billboardLocations = {
       "type": "Feature",
       "properties": {
         "Size": "10.5 x 36",
-        "approxLoc": "I-85 ",
-        "approxLocDesc": "1.2 miles south of Route 82��������������������������������������������������������������",
+        "approxLoc": "I-85",
+        "approxLocDesc": "1.2 miles south of Route 82",
         "SCEG": null,
         "DOMINION": null,
         "DIXIE": null,
@@ -312,7 +312,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 35.100864,
         "Long": -81.644478,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 panel PP925_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -323,8 +323,8 @@ var billboardLocations = {
       "type": "Feature",
       "properties": {
         "Size": "10.5 x 36",
-        "approxLoc": "I-85 ",
-        "approxLocDesc": "1.8 miles south of Highway 24 (Exit 11)������������������������������������������",
+        "approxLoc": "I-85",
+        "approxLocDesc": "1.8 miles south of Highway 24 (Exit 11)",
         "SCEG": null,
         "DOMINION": null,
         "DIXIE": null,
@@ -338,7 +338,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 34.516939,
         "Long": -82.871912,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 panel PP986_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -349,8 +349,8 @@ var billboardLocations = {
       "type": "Feature",
       "properties": {
         "Size": "10 x 40",
-        "approxLoc": "I-85 Business ",
-        "approxLocDesc": "1 mile north of Highway 9����������������������������������������������� ���",
+        "approxLoc": "I-85 Business",
+        "approxLocDesc": "1 mile north of Highway 9",
         "SCEG": null,
         "DOMINION": 2,
         "DIXIE": null,
@@ -364,7 +364,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 34.999906,
         "Long": -81.930417,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 panel 2172_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -375,8 +375,8 @@ var billboardLocations = {
       "type": "Feature",
       "properties": {
         "Size": "10.5 x 36",
-        "approxLoc": "I-385 ",
-        "approxLocDesc": "700 feet south of Harmony Church Road��������������������������������������� ",
+        "approxLoc": "I-385",
+        "approxLocDesc": "700 feet south of Harmony Church Road",
         "SCEG": null,
         "DOMINION": 1,
         "DIXIE": null,
@@ -390,7 +390,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 34.655559,
         "Long": -82.163224,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 panel 7125_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -401,8 +401,8 @@ var billboardLocations = {
       "type": "Feature",
       "properties": {
         "Size": "10.5 x 36",
-        "approxLoc": "Highway 25 ",
-        "approxLocDesc": "700 feet north of McKinny Road����������������������������������������� ",
+        "approxLoc": "Highway 25",
+        "approxLocDesc": "700 feet north of McKinny Road",
         "SCEG": null,
         "DOMINION": null,
         "DIXIE": null,
@@ -416,7 +416,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 35.020693,
         "Long": -82.412883,
-        "imageFile": "LCWASD -Lancaster2.jpg"
+        "imageFile": "BBSC 811 panel 8263_small.PNG"
       },
       "geometry": {
         "type": "Point",

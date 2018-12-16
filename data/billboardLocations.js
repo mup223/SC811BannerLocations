@@ -52,7 +52,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 33.938461,
         "Long": -81.270229,
-        "imageFile": "BBGA 811 panel  52627_small.PNG"
+        "imageFile": "BBGA 811 panel 52627_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -208,7 +208,7 @@ var billboardLocations = {
         "BEC": null,
         "LAT": 35.079642,
         "Long": -82.059899,
-        "imageFile": "BBSC 811 52119_small.PNG"
+        "imageFile": "BBSC811panel7555_small.PNG"
       },
       "geometry": {
         "type": "Point",
@@ -260,7 +260,7 @@ var billboardLocations = {
         "BEC": 1,
         "LAT": 33.818738,
         "Long": -80.144213,
-        "imageFile": "BBSC 811 panel 7555_small.PNG"
+        "imageFile": "BBSC 811 52119_small.PNG"
       },
       "geometry": {
         "type": "Point",

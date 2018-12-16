@@ -198,16 +198,16 @@
           onEachFeature: function(feature, layer) {
             //console.log(layer)
             var images = layer.feature.properties.imageFile;
-            console.log(images);
+            // console.log(images);
             var imagesRegEx = images.match(/[^_]*/i)[0];
-            console.log(imagesRegEx);
+            // console.log(imagesRegEx);
             var imagesType = images.substr(images.indexOf(".") + 1);
-            console.log(imagesType);
+            // console.log(imagesType);
             var name = layer.feature.properties.name;
             //console.log(name)
             var loc = layer.feature.properties.address;
-            console.log(loc)
-            layer.on('click', onClick.bind(this, images, name, loc));
+            // console.log(loc)
+            layer.on('click', onClick.bind(this, images, name, loc, imagesRegEx, imagesType));
           }
         }).addTo(map);
       } else {
@@ -223,15 +223,20 @@
               radius: 10
             }
           },
-          onEachFeature: function(feature, layer, loc) {
+          onEachFeature: function(feature, layer, loc, imagesRegEx, imagesType) {
             //console.log(layer)
             var images = layer.feature.properties.imageFile;
             //console.log(images);
+            var imagesRegEx = images.match(/[^_]*/i)[0].toLocaleString();
+            //console.log(imagesRegEx);
+            var imagesType = images.substr(images.indexOf(".") + 1);
+            //console.log(imagesType);
             var name = layer.feature.properties.approxLoc;
             //console.log(name)
             var loc = layer.feature.properties.approxLocDesc;
             // console.log(loc);
-            layer.on('click', onClick.bind(this, images, name, loc));
+            layer.on('click', onClick.bind(this, images, name, loc, imagesRegEx, imagesType));
+            //console.log('<a href="data/images/' + imagesRegEx + '.' + imagesType + '">' + '<img src="data/images/' + images + '"/></a>');
           }
         }).addTo(map);
       }
@@ -266,15 +271,16 @@
     // Add layer to map!
     stateLayer.addTo(map)
 
-    function onClick(images, name, loc) {
+    function onClick(images, name, loc, imagesRegEx, imagesType) {
       //console.log(images);
       var pics = document.getElementById('image');
-      pics.innerHTML = '<img src="data/images/' + images + '"/>';
+      pics.innerHTML = '<a href="data/images/' + imagesRegEx + '.' + imagesType + '">' + '<img src="data/images/' + images + '"/></a>';
       var info = document.getElementById('info');
       info.innerHTML = '<p>' + name + '</p>' + '<p>' + loc + '</p>';
-      // <a href="https://www.w3schools.com">Visit W3Schools</a> 
+      // <a href="https://www.w3schools.com">Visit W3Schools</a>
+
+      //console.log('<a href="data/images/' + imagesRegEx + '.' + imagesType + '">' + '<img src="data/images/' + images + '"/></a>');
       //<img src="\data\images\LCWASD -Lancaster.jpg" id="imageTest">
-      //"<img src='something' onmouseover='change(\"ex1\")' />"
     };
   </script>
 

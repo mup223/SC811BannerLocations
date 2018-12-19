@@ -18,8 +18,8 @@
       font-family: "Lato", sans-serif;
       font-size: 100%;
       font-weight: 300;
-      width:100vw;
-      height:100vh;
+      width: 100vw;
+      height: 100vh;
       /* color: rgb(172, 172, 172); */
     }
 
@@ -52,7 +52,7 @@
 
     #map {
       width: 100vw;
-      height: 75vh;
+      height: 70vh;
       margin: 10px auto;
     }
 
@@ -108,18 +108,34 @@
       clear: both;
     }
 
-    @media screen and (max-width: 300px) {
-			#map,
-			footer {
-				width: 100vw;
-			}
+    @media screen and (max-height: 800px) {
+
       #map {
-        height: 75vh;
+        height: 65vh;
       }
-      footer {
-        display:7vh;
+
+    }
+
+    @media screen and (max-height: 500px) {
+
+      #map {
+        height: 50vh;
       }
-		}
+
+    }
+
+    @media screen and (max-height: 350px) {
+
+      #map {
+        height: 100vh;
+      }
+
+
+      #footer {
+        display: none;
+      }
+
+    }
   </style>
 </head>
 
@@ -133,10 +149,12 @@
         <p id='image'><b>Click on the points to see the pictures.</b></p>
       </div>
       <div class='column middle'>
-        <p id='info'>Across the nation every six minutes an underground utility line is damaged by digging, interrupting services and in some cases hampering safety and causing injury or even death, according to industry experts." –
-            <a href="https://www.greenvilleonline.com/story/news/local/greer/2016/08/10/calling-811-important-but-not-enough/88515244/">
-              Calling 811 is important but not enough</a>, Greenville News, August 10, 2017
-          </p>
+        <p id='info'>Across the nation every six minutes an underground utility line is damaged by digging,
+          interrupting services and in some cases hampering safety and causing injury or even death, according to
+          industry experts." –
+          <a href="https://www.greenvilleonline.com/story/news/local/greer/2016/08/10/calling-811-important-but-not-enough/88515244/">
+            Calling 811 is important but not enough</a>, Greenville News, August 10, 2017
+        </p>
       </div>
       <div class='column right'>
         <div><img src="/data/images/SC811new2.png" class="footer-img"></div>
@@ -188,10 +206,10 @@
       if (file == 'bannerLayer') {
         // console.log(file);
         geojsonLayers[file] = L.geoJson(js_files[file].source, {
-          pointToLayer: function(feature, latlng) {
+          pointToLayer: function (feature, latlng) {
             return L.circleMarker(latlng) //.on('click', onClick);
           },
-          style: function(feature) {
+          style: function (feature) {
             return {
               fillColor: js_files[file].color,
               weight: 0,
@@ -199,7 +217,7 @@
               radius: 10
             }
           },
-          onEachFeature: function(feature, layer) {
+          onEachFeature: function (feature, layer) {
             //console.log(layer)
             var images = layer.feature.properties.imageFile;
             // console.log(images);
@@ -216,10 +234,10 @@
         }).addTo(map);
       } else {
         geojsonLayers[file] = L.geoJson(js_files[file].source, {
-          pointToLayer: function(feature, latlng) {
+          pointToLayer: function (feature, latlng) {
             return L.circleMarker(latlng) //.on('click', onClick);
           },
-          style: function(feature) {
+          style: function (feature) {
             return {
               fillColor: js_files[file].color,
               weight: 0,
@@ -227,7 +245,7 @@
               radius: 10
             }
           },
-          onEachFeature: function(feature, layer, loc, imagesRegEx, imagesType) {
+          onEachFeature: function (feature, layer, loc, imagesRegEx, imagesType) {
             //console.log(layer)
             var images = layer.feature.properties.imageFile;
             //console.log(images);
@@ -256,7 +274,7 @@
     }).addTo(map);
 
     var stateLayer = L.geoJson(states, {
-      style: function(feature) {
+      style: function (feature) {
         return {
           color: '#444',
           weight: 2,
@@ -266,7 +284,7 @@
       },
 
       // Filter for the correct state to use
-      filter: function(feature) {
+      filter: function (feature) {
         if (feature.properties.NAME == "South Carolina") {
           return feature;
         }
@@ -278,7 +296,8 @@
     function onClick(images, name, loc, imagesRegEx, imagesType) {
       //console.log(images);
       var pics = document.getElementById('image');
-      pics.innerHTML = '<a href="data/images/' + imagesRegEx + '.' + imagesType + '">' + '<img src="data/images/' + images + '"/></a>';
+      pics.innerHTML = '<a href="data/images/' + imagesRegEx + '.' + imagesType + '">' + '<img src="data/images/' +
+        images + '"/></a>';
       var info = document.getElementById('info');
       info.innerHTML = '<p>' + name + '</p>' + '<p>' + loc + '</p>';
       // <a href="https://www.w3schools.com">Visit W3Schools</a>

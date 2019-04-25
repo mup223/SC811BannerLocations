@@ -205,7 +205,7 @@
     var geojsonLayers = {};
     for (file in js_files) {
       // console.log(file)
-      //console.log(js_files[file].color)
+      // console.log(js_files[file].color)
       if (file == 'bannerLayer') {
         // console.log(file);
         geojsonLayers[file] = L.geoJson(js_files[file].source, {
@@ -221,7 +221,7 @@
             }
           },
           onEachFeature: function (feature, layer) {
-            //console.log(layer)
+            console.log(layer)
             var images = layer.feature.properties.imageFile;
             // console.log(images);
             var imagesRegEx = images.match(/[^_]*/i)[0];
@@ -294,7 +294,8 @@
       }
     });
     // Add layer to map!
-    stateLayer.addTo(map)
+    stateLayer.addTo(map);
+    // console.log(stateLayer);
 
     function onClick(images, name, loc, imagesRegEx, imagesType) {
       //console.log(images);

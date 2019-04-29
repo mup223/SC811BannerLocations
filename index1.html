@@ -15,7 +15,7 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script>
         // use d3.csv to request file
-        let data1 = d3.csv('data/Book1.csv');
+        let data1 = d3.csv('data/Book2.csv');
         // wait for data
         Promise.all([data1]).then(csvToGeoJSON);
         function csvToGeoJSON(data) {

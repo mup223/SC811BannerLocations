@@ -12,51 +12,64 @@
 
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.3.6/papaparse.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script>
-        Papa.parse('data/Book1.csv', {
+       
+        // use d3.csv to request file
+        let data1 = d3.csv('data/Book1.csv');
 
-                    download: true,
-                    header: true,
-                    complete: function (data) {
+        // wait for data
+        Promise.all([data1]).then(csvToGeoJSON);
 
-                        // processData(counties, data);
+        function csvToGeoJSON(data) {
+            // function takes array of CSV data and converts to GeoJSON
+            
+            //  GeoJSON structure
+            let geojson = {
+                "type": "FeatureCollection",
+                "features": []
+            }
 
-                        // data is accessible to us here
-                        console.log('data: ', data);
+            // declare point variable here
+            let point;
 
-                        // note that counties is also accessible here!
-                        // console.log('counties: ', counties);
+            // loop through the data and build a new GeoJSON point feature for each
+            data[0].forEach(function(datum) {
 
+                // structure for a new GeoJSON point feature
+                point = {
+                    "type": "Feature",
+                    "properties": {},
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            +datum['x'],
+                            +datum['y']
+                        ]
                     }
-                }); // end of Papa.parse()
+                };
+                
+                // loop through properties and add to point feature props
+                for(let key in datum) {
+                    
+                    // customize here to include/exclude what you want from
+                    // properites
+                    if(key != 'coordinates' || key != 'x' || key != 'y') {
+                        point.properties[key] = datum[key];
+                    }
 
-        // AJAX request for GeoJSON data
-        // $.getJSON("C:/scratch/or-counties.json", function (counties) {
-        //         Papa.parse('data/or-unemployment-rates.csv', {
+                }
 
-        //             download: true,
-        //             header: true,
-        //             complete: function (data) {
+                // finally, push the new GeoJSON feature to the array of features
+                geojson.features.push(point);
 
-        //                 processData(counties, data);
+            });
 
-        //                 // data is accessible to us here
-        //                 // console.log('data: ', data);
+            // verify that your results are valid GeoJSON
+            console.log(geojson)
 
-        //                 // note that counties is also accessible here!
-        //                 // console.log('counties: ', counties);
+        }
 
-        //             }
-        //         }); // end of Papa.parse()
-
-        //         // counties is accessible here
-        //         // console.log('counties1: ', counties);
-
-        //     })
-        //     .fail(function () {
-        //         console.log('an error occured with the ajax/json')
-        //     });
     </script>
 </body>
 

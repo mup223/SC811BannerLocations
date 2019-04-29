@@ -1,16 +1,16 @@
-y,x,market,desc,type
-32.925518,-80.693676,Berkeley,I-95 .3 miles south of Exit 57 (SC 64),banner
-32.879065,-79.931546,Charleston,I-526 (Clements Ferry Road/Island Park Drive) - DIGITAL,banner
-32.862309,-47.133221,Charleston,I-26 .9 miles east of Montague Avenue,banner
-32.780278,-80.175745,Charleston,US 17 .5 miles south of State Route 162,banner
-33.18907,-80.388639,Charleston,I-26 4 miles east of State Route 453,billboard
-34.853375,-82.27381,Greenville,I-85 1 mile south of Pelham Road,billboard
-34.800694,-82.426206,Greenville,Highway 25 (White Horse Road) 100 feet south of I-185,billboard
-34.213976,-80.557273,Horry,I-20 .2 miles west of Blackriver Road,banner
-33.198352,-80.603678,Jasper,I-95 200 feet north of US 78,banner
-33.991705,-81.28411,Lexington,US 1 .2 miles west of US 1 & 378,billboard
-34.676191,-83.113147,Oconee,Highway 76 240 feet west of Pearson Street,banner
-35.077102,-82.058124,Spartanburg,I-26 750 feet east of Highway 292,billboard
-34.888934,-82.175159,Spartanburg,I-85 .9 miles south of Highway 101,banner
-34.560493,-81.890579,York,I-26 4 miles west of SC 56,billboard
-35.051335,-80.958524,York,I-77 .4 miles north of Coltharp Road,banner
+y,x,market,desc,type,imageFile
+32.925518,-80.693676,Berkeley,I-95 .3 miles south of Exit 57 (SC 64),banner,BBSC 811 panel PP925_small.PNG
+32.879065,-79.931546,Charleston,I-526 (Clements Ferry Road/Island Park Drive) - DIGITAL,banner,BBSC 811 panel 7622_small.PNG
+32.862309,-47.133221,Charleston,I-26 .9 miles east of Montague Avenue,banner,BBSC 811 panel PP986_small.PNG
+32.780278,-80.175745,Charleston,US 17 .5 miles south of State Route 162,banner,BBSC 811 panel PP986_small.PNG
+33.18907,-80.388639,Charleston,I-26 4 miles east of State Route 453,billboard,BBSC 811 panel PP986_small.PNG
+34.853375,-82.27381,Greenville,I-85 1 mile south of Pelham Road,billboard,BBSC 811 panel PP986_small.PNG
+34.800694,-82.426206,Greenville,Highway 25 (White Horse Road) 100 feet south of I-185,billboard,BBSC 811 panel PP986_small.PNG
+34.213976,-80.557273,Horry,I-20 .2 miles west of Blackriver Road,banner,BBSC 811 panel PP986_small.PNG
+33.198352,-80.603678,Jasper,I-95 200 feet north of US 78,banner,BBSC 811 panel PP986_small.PNG
+33.991705,-81.28411,Lexington,US 1 .2 miles west of US 1 & 378,billboard,BBSC 811 panel PP986_small.PNG
+34.676191,-83.113147,Oconee,Highway 76 240 feet west of Pearson Street,banner,BBSC 811 panel PP986_small.PNG
+35.077102,-82.058124,Spartanburg,I-26 750 feet east of Highway 292,billboard,BBSC 811 panel PP986_small.PNG
+34.888934,-82.175159,Spartanburg,I-85 .9 miles south of Highway 101,banner,BBSC 811 panel PP986_small.PNG
+34.560493,-81.890579,York,I-26 4 miles west of SC 56,billboard,BBSC 811 panel PP986_small.PNG
+35.051335,-80.958524,York,I-77 .4 miles north of Coltharp Road,banner,BBSC 811 panel PP986_small.PNG

@@ -170,6 +170,7 @@
     <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="data/us_states_20m.js"></script>
 
     <script>
         // map options
@@ -267,13 +268,59 @@
                                 fillOpacity: 0.75,
                                 radius: 10
                             }
+                        },
+                        onEachFeature: function (feature, layer) {
+                            // console.log(layer.feature.properties);
+                            var images = layer.feature.properties.imageFile;
+                            // console.log(images);
+                            var imagesRegEx = images.match(/[^_]*/i)[0];
+                            // console.log(imagesRegEx);
+                            var imagesType = images.substr(images.indexOf(".") + 1);
+                            // console.log(imagesType);
+                            var name = layer.feature.properties.name;
+                            //console.log(name)
+                            layer.on('click', onClick.bind(this, images, name, imagesRegEx, imagesType));
                         }
                     }).addTo(map)
                 }
-                
+
             })
         }
-        
+
+        // add the state outline to the map
+        var stateLayer = L.geoJson(states, {
+            style: function (feature) {
+                return {
+                    color: '#444',
+                    weight: 2,
+                    fillOpacity: 0,
+                    interactive: false
+                };
+            },
+
+            // Filter for the correct state to use
+            filter: function (feature) {
+                if (feature.properties.NAME == "South Carolina") {
+                    return feature;
+                }
+            }
+        });
+        // Add layer to map!
+        stateLayer.addTo(map);
+
+        function onClick(images, name, imagesRegEx, imagesType) {
+            //console.log(images);
+            var pics = document.getElementById('image');
+            pics.innerHTML = '<a href="data/images/' + imagesRegEx + '.' + imagesType + '">' +
+                '<img src="data/images/' +
+                images + '"/></a>';
+            var info = document.getElementById('info');
+            info.innerHTML = '<p>' + name + '</p>';
+            // <a href="https://www.w3schools.com">Visit W3Schools</a>
+
+            //console.log('<a href="data/images/' + imagesRegEx + '.' + imagesType + '">' + '<img src="data/images/' + images + '"/></a>');
+            //<img src="\data\images\LCWASD -Lancaster.jpg" id="imageTest">
+        };
     </script>
 </body>
 

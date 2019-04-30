@@ -317,14 +317,14 @@
                     }).addTo(map)
                 }
                 // console.log(data);
-                legend(data);
+                legend(dataz);
             })
         }
 
-        function legend(data) {
-            for (i=0; i < data.features.length; i++) {
-                console.log(data.features[i]);
-            }
+        function legend(dataz) {
+            data.features.forEach(function(legData) {
+                console.log(legData)
+            })
 
             // console.log(data.features)
 

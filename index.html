@@ -274,7 +274,7 @@
       "<b style='color:#ff2700; text-shadow: 0px 0px 1px #333; font-size: 20px'>Banners</b>": geojsonLayers
         .bannerLayer
     };
-    console.log(geojsonLayers.billboardLayer)
+    console.log('layers: ', geojsonLayers.billboardLayer)
     L.control.layers(null, sourcesLayers, {
       collapsed: false
     }).addTo(map);

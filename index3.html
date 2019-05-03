@@ -249,85 +249,84 @@
         let bannerLayer, billboardLayer;
 
         function getToPoint(data) {
-            // console.log(data.features[0].properties.type);
-            // console.log(data.features[2]);
-            /////////////////////////////////////////////
-            //// why wouldn't a for loop work here? ////
-            ///////////////////////////////////////////
-            data.features.forEach(function (dataz) {
-                // counter = 1
-                // console.log(dataz.properties.market)
-                if (dataz.properties.type == 'banner') {
-                    // console.log(dataz.properties.type);
-                    bannerLayer = L.geoJson(dataz, {
-                        pointToLayer: function (feature, latlng) {
-                            return L.circleMarker(latlng)
-                        },
-                        style: function (feature) {
-                            return {
-                                fillColor: '#4286f4',
-                                weight: 0,
-                                fillOpacity: 0.75,
-                                radius: 10
-                            }
-                        },
-                        onEachFeature: function (feature, layer) {
-                            // console.log(layer.feature.properties);
-                            var images = layer.feature.properties.imageFile;
-                            // console.log(images);
-                            var imagesRegEx = images.match(/[^_]*/i)[0];
-                            // console.log(imagesRegEx);
-                            var imagesType = images.substr(images.indexOf(".") + 1);
-                            // console.log(imagesType);
-                            var name = layer.feature.properties.market;
-                            //console.log(name)
-                            var desc = layer.feature.properties.desc;
-                            // console.log(layer.feature.properties);
-                            layer.on('click', onClick.bind(this, images, name, imagesRegEx,
-                                imagesType, desc));
-                        }
-                    }).addTo(map)
-                    // geojsonLayers.push(bannerLayer);
-                } else {
-                    // console.log(dataz.properties.type);
-                    billboardLayer = L.geoJson(dataz, {
-                        pointToLayer: function (feature, latlng) {
-                            return L.circleMarker(latlng)
-                        },
-                        style: function (feature) {
-                            return {
-                                fillColor: '#f44242',
-                                weight: 0,
-                                fillOpacity: 0.75,
-                                radius: 10
-                            }
-                        },
-                        onEachFeature: function (feature, layer) {
-                            // console.log(layer.feature.properties);
-                            var images = layer.feature.properties.imageFile;
-                            // console.log(images);
-                            var imagesRegEx = images.match(/[^_]*/i)[0];
-                            // console.log(imagesRegEx);
-                            var imagesType = images.substr(images.indexOf(".") + 1);
-                            // console.log(imagesType);
-                            var name = layer.feature.properties.market;
-                            //console.log(name)
-                            var desc = layer.feature.properties.desc;
-                            // console.log(layer.feature.properties);
-                            layer.on('click', onClick.bind(this, images, name, imagesRegEx,
-                                imagesType, desc));
-                        }
-                    }).addTo(map)
+
+            bannerLayer = L.geoJson(data, {
+                pointToLayer: function (feature, latlng) {
+                    return L.circleMarker(latlng)
+                },
+                style: function (feature) {
+                    return {
+                        fillColor: '#4286f4',
+                        weight: 0,
+                        fillOpacity: 0.75,
+                        radius: 10
+                    }
+                },
+                filter: function (feature) {
+                    if (feature.properties.type == 'banner') {
+                        return feature;
+                    }
+                },
+                onEachFeature: function (feature, layer) {
+                    // console.log(layer.feature.properties);
+                    var images = layer.feature.properties.imageFile;
+                    // console.log(images);
+                    var imagesRegEx = images.match(/[^_]*/i)[0];
+                    // console.log(imagesRegEx);
+                    var imagesType = images.substr(images.indexOf(".") + 1);
+                    // console.log(imagesType);
+                    var name = layer.feature.properties.market;
+                    //console.log(name)
+                    var desc = layer.feature.properties.desc;
+                    // console.log(layer.feature.properties);
+                    layer.on('click', onClick.bind(this, images, name, imagesRegEx,
+                        imagesType, desc));
                 }
-                // console.log(data);
-                
+            }).addTo(map)
+            // geojsonLayers.push(bannerLayer);
+
+            // console.log(dataz.properties.type);
+            billboardLayer = L.geoJson(data, {
+                pointToLayer: function (feature, latlng) {
+                    return L.circleMarker(latlng)
+                },
+                style: function (feature) {
+                    return {
+                        fillColor: '#f44242',
+                        weight: 0,
+                        fillOpacity: 0.75,
+                        radius: 10
+                    }
+                },
+                filter: function (feature) {
+                    if (feature.properties.type == 'billboard') {
+                        return feature;
+                    }
+                },
+                onEachFeature: function (feature, layer) {
+                    // console.log(layer.feature.properties);
+                    var images = layer.feature.properties.imageFile;
+                    // console.log(images);
+                    var imagesRegEx = images.match(/[^_]*/i)[0];
+                    // console.log(imagesRegEx);
+                    var imagesType = images.substr(images.indexOf(".") + 1);
+                    // console.log(imagesType);
+                    var name = layer.feature.properties.market;
+                    //console.log(name)
+                    var desc = layer.feature.properties.desc;
+                    // console.log(layer.feature.properties);
+                    layer.on('click', onClick.bind(this, images, name, imagesRegEx,
+                        imagesType, desc));
+                }
+            }).addTo(map)
+
+
+            bannerLayer.eachLayer(function (layer) {
+                console.log(layer);
             })
-            bannerLayer.eachLayer(function(layer) {
-                    console.log(layer);
-                })
             // legend(bannerLayer,billboardLayer)
         }
-        
+
         // console.log(bannerLayer)
         // console.log(geojsonLayers);
         // console.log('billGroup: ', geojsonLayers);
@@ -336,14 +335,14 @@
         //         "<b style='color:#1f78b4; text-shadow: 0px 0px 1px #333; font-size: 20px'>Billboards</b>": geojsonLayers[0],
         //         "<b style='color:#ff2700; text-shadow: 0px 0px 1px #333; font-size: 20px'>Banners</b>": bannerLayer
         //     };
-        
+
         // L.control.layers(null, geojsonLayers, {
         //         collapsed: false
         //     }).addTo(map);
 
         function legend(banner, billboard) {
 
-        //    console.log(billboardLayer)
+            //    console.log(billboardLayer)
 
             // colored legend with bullet points
             var sourcesLayers = {

@@ -246,7 +246,8 @@
         }
         /////////////////////////////END D3////////////////////////////////////
 
-        var geojsonLayers = [];
+        let bannerLayer, billboardLayer;
+
         function getToPoint(data) {
             // console.log(data.features[0].properties.type);
             // console.log(data.features[2]);
@@ -317,21 +318,17 @@
                                 imagesType, desc));
                         }
                     }).addTo(map)
-                    var billboardGroup = L.layerGroup(billboardLayer);
-                    var billboardVar = {
-                        "billboards": billboardGroup
-                    };
-                    geojsonLayers.push(billboardVar);
-                    var bannerGroup = L.layerGroup(bannerLayer);
-                    var bannerVar = {
-                        "banners": bannerGroup
-                    };
-                    geojsonLayers.push(bannerVar);
                 }
                 // console.log(data);
+                
             })
+            bannerLayer.eachLayer(function(layer) {
+                    console.log(layer);
+                })
+            // legend(bannerLayer,billboardLayer)
         }
-
+        
+        // console.log(bannerLayer)
         // console.log(geojsonLayers);
         // console.log('billGroup: ', geojsonLayers);
 
@@ -344,21 +341,18 @@
         //         collapsed: false
         //     }).addTo(map);
 
-        function legend(dataz) {
-            // dataz.features.forEach(function(legData) {
-            //     console.log(legData)
-            // })
+        function legend(banner, billboard) {
 
-            // console.log(data.features)
+        //    console.log(billboardLayer)
 
             // colored legend with bullet points
-            // var sourcesLayers = {
-            //     "<b style='color:#1f78b4; text-shadow: 0px 0px 1px #333; font-size: 20px'>Billboards</b>": billboardLayer,
-            //     "<b style='color:#ff2700; text-shadow: 0px 0px 1px #333; font-size: 20px'>Banners</b>": bannerLayer
-            // };
+            var sourcesLayers = {
+                "<b style='color:#1f78b4; text-shadow: 0px 0px 1px #333; font-size: 20px'>Billboards</b>": billboard,
+                "<b style='color:#ff2700; text-shadow: 0px 0px 1px #333; font-size: 20px'>Banners</b>": banner
+            };
 
             //console.log(geojsonLayers.billboardLayer)
-            L.control.layers(null, geojsonLayers, {
+            L.control.layers(null, sourcesLayers, {
                 collapsed: false
             }).addTo(map);
         }

@@ -324,25 +324,11 @@
             bannerLayer.eachLayer(function (layer) {
                 console.log(layer);
             })
-            // legend(bannerLayer,billboardLayer)
+            
+            legend(bannerLayer,billboardLayer)
         }
 
-        // console.log(bannerLayer)
-        // console.log(geojsonLayers);
-        // console.log('billGroup: ', geojsonLayers);
-
-        // var sourcesLayers = {
-        //         "<b style='color:#1f78b4; text-shadow: 0px 0px 1px #333; font-size: 20px'>Billboards</b>": geojsonLayers[0],
-        //         "<b style='color:#ff2700; text-shadow: 0px 0px 1px #333; font-size: 20px'>Banners</b>": bannerLayer
-        //     };
-
-        // L.control.layers(null, geojsonLayers, {
-        //         collapsed: false
-        //     }).addTo(map);
-
         function legend(banner, billboard) {
-
-            //    console.log(billboardLayer)
 
             // colored legend with bullet points
             var sourcesLayers = {
@@ -375,6 +361,7 @@
                 }
             }
         });
+        
         // Add layer to map!
         stateLayer.addTo(map);
 
